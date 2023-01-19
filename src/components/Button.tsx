@@ -3,21 +3,22 @@ import { Link } from 'react-router-dom'
 
 interface Props extends ComponentPropsWithRef<"button">{
     as : "link" | "button",
-    styled : "primary" | "secondary"
-    to? : string
+    styled : "primary" | "secondary",
+    to? : string,
+    smallPadding? :boolean
 }
 
-const Button:FC<Props> = ({children,className,styled,as,to,...props}) => {
+const Button:FC<Props> = ({children,className,styled,as,to,smallPadding,...props}) => {
 
     let Style = " ";
-    let defaultStyle = "py-2 px-8 text-sm border-[1.5px] rounded-lg"
+    let defaultStyle = `py-2 ${smallPadding ? "px-3" : "px-8"} font-medium text-xs border-[1.5px] rounded-lg`
 
     switch (styled) {
         case "primary" : 
             Style = `${className ? className : " "} border-blue bg-blue text-white ${defaultStyle}`;
             break;
         case "secondary" : 
-            Style = `${className ? className : " "} border-blue bg-black text-white ${defaultStyle}`;
+            Style = `${className ? className : " "} border-blue bg-trans text-white ${defaultStyle}`;
             break;
     }
 

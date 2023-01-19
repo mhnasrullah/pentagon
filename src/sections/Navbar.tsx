@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import {useEffect, useState} from 'react'
 import Box from '../components/Box'
 import { Link } from 'react-router-dom'
 import {HiMenuAlt1} from 'react-icons/hi'
@@ -23,9 +23,18 @@ const AuthComponent = () => {
 const Navbar = () => {
 
     const [show,isShow] = useState(false);
+    const [bgTrans,setTrans] = useState(true);
+
+    useEffect(()=>{
+        console.log("a")
+        window.onscroll = (e) => {
+            if(window.scrollY > 2) setTrans(true)
+            else setTrans(false)
+        }
+    },[bgTrans])
 
   return (
-    <nav className={`${show ? "bg-black lg:bg-transparent" : "bg-transparent"} fixed w-full text-white`}>
+    <nav className={`${show || bgTrans ? "bg-black lg:bg-transparent" : "bg-transparent"} transition-all lg:top-8 fixed z-[10000] w-full text-white`}>
         <Box className='lg:flex lg:items-center'>
             {/* Left Side n full on mobile */}
             <div className='flex justify-between lg:w-fit'>
@@ -38,7 +47,7 @@ const Navbar = () => {
             </div>
 
             {/* Menu side w toogle on mobile */}
-            <div className={`${show ? "bg-black lg:bg-transparent" : "bg-transparent"} text-sm lg:ml-8 lg:space-x-8 flex flex-col lg:flex-row lg:justify-start items-center space-y-2 lg:py-0 py-6 ${show ? 'block' : 'hidden lg:block'}`}>
+            <div className={`${show ? "bg-black lg:bg-transparent" : "bg-transparent"} text-xs lg:text-sm font-medium lg:ml-8 lg:space-x-8 flex flex-col lg:flex-row lg:justify-start items-center space-y-3 lg:py-0 py-6 ${show ? 'block' : 'hidden lg:block'}`}>
                 <Link to={'/'} className="text-white80">Explore</Link>
                 <Link to={'/'} className="text-white80">Help</Link>
                 <Link to={'/'} className="text-white80">Stats</Link>
