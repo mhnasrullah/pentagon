@@ -26,15 +26,14 @@ const Navbar = () => {
     const [bgTrans,setTrans] = useState(true);
 
     useEffect(()=>{
-        console.log("a")
-        window.onscroll = (e) => {
-            if(window.scrollY > 2) setTrans(true)
+        window.onscroll = () => {
+            if(window.scrollY < 2) setTrans(true)
             else setTrans(false)
         }
     },[bgTrans])
 
   return (
-    <nav className={`${show || bgTrans ? "bg-black lg:bg-transparent" : "bg-transparent"} transition-all lg:top-8 fixed z-[10000] w-full text-white`}>
+    <nav className={`${!bgTrans ? 'bg-black lg:top-0' : `${show ? 'bg-black lg:bg-transparent' : `bg-transparent`} lg:top-8`} transition-all fixed z-[10000] w-full text-white`}>
         <Box className='lg:flex lg:items-center'>
             {/* Left Side n full on mobile */}
             <div className='flex justify-between lg:w-fit'>

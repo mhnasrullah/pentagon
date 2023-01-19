@@ -1,6 +1,6 @@
-import React, { ComponentPropsWithRef, FC } from 'react'
+import React, { ComponentProps, FC } from 'react'
 
-interface Props extends ComponentPropsWithRef<"div">{
+interface Props extends ComponentProps<"div">{
     image : string,
     price : number,
     name : string,
@@ -8,7 +8,7 @@ interface Props extends ComponentPropsWithRef<"div">{
     _for? : "header" | "items"
 }
 
-const NFTCard:FC<Props> = ({image,price,name,by,_for = "items",className,...props}) => {
+const NFTCard:FC<Props> = ({image,price,name,by,_for = "items",className}) => {
 
     if(_for === "header"){
         return (

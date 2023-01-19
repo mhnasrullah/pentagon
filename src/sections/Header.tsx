@@ -19,7 +19,7 @@ const Stats = ({position,name,value} : StatsProps) => (
 const Header = () => {
   return (
     <div
-    className='min-h-screen bg-cover bg-center lg:pb-32'
+    className='min-h-screen bg-cover bg-center pb-32 md:pb-52'
     style={{
         backgroundImage : 'url(/assets/background.jpg)'
     }}>

@@ -1,14 +1,17 @@
 [
     {
         "text" : "Grow Your Business With Startup Gateway",
-        "image" : "/assets/image/bussiness-explore.jpg"
+        "link" : "/",
+        "image" : "/assets/image/business-explore.jpg"
     },
     {
         "text" : "Explore Any Opportunity With Us",
+        "link" : "/",
         "image" : "/assets/image/opportunity-explore.jpg"
     },
     {
         "text" : "Find Best Community To Growth Up",
+        "link" : "/",
         "image" : "/assets/image/community-explore.jpg"
     }
 ]
