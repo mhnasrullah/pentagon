@@ -1,0 +1,32 @@
+[
+    {
+        "image" : "/assets/nft/monalisa.jpg",
+        "price" : 0.2,
+        "name" : "Monalisa Digital Art",
+        "by" : "Alexander Davinci"
+    },
+    {
+        "image" : "/assets/nft/yellow-green-woman.jpg",
+        "price" : 1.0,
+        "name" : "Yellow & Green Woman",
+        "by" : "Sarah Steven"
+    },
+    {
+        "image" : "/assets/nft/diamond-black.jpg",
+        "price" : 0.7,
+        "name" : "Black Diamond In Space",
+        "by" : "Krundge Hag"
+    },
+    {
+        "image" : "/assets/nft/people-fly.jpg",
+        "price" : 0.8,
+        "name" : "People FLy Red Park",
+        "by" : "Michael Simon"
+    },
+    {
+        "image" : "/assets/nft/liquid-color.jpg",
+        "price" : 1.2,
+        "name" : "Liquid Hand From Color",
+        "by" : "Simon Lee"
+    }
+]

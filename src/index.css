@@ -12,6 +12,18 @@ body{
   font-family: 'Poppins', sans-serif;
 }
 
+/* Swiper custom style */
+
+.swiper-pagination-bullet{
+  background: white !important;
+}
+.swiper-pagination-bullet-active{
+  background-color: white !important
+}
+
+.swiperCustom{
+  padding-bottom: 36px !important
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

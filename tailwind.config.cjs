@@ -16,7 +16,9 @@ module.exports = {
       white : "#ffffff",
       halfWhite : "#FFFFFF80",
       white80 : "#ffffffcc",
-      blue : "#2C50F4"
+      blue : "#2C50F4",
+      secondBlue : "#7D94FC",
+      secondBlack : "#140F16"
     }
   },
   plugins: [],

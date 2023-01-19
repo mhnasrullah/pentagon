@@ -1,0 +1,22 @@
+[
+    {
+        "name" : "Digital Arts",
+        "image" : "/assets/image/category/graphic.jpg"
+    },
+    {
+        "name" : "Music",
+        "image" : "/assets/image/category/music.jpg"
+    },
+    {
+        "name" : "Sports",
+        "image" : "/assets/image/category/sports.jpg"
+    },
+    {
+        "name" : "Photography",
+        "image" : "/assets/image/category/photo.jpg"
+    },
+    {
+        "name" : "Trading Card",
+        "image" : "/assets/image/category/trading.jpg"
+    }
+]

@@ -4,7 +4,7 @@ interface Props extends ComponentPropsWithRef<"div">{}
 
 const Box:FC<Props> = ({children,className}) => {
     return (
-        <div className={`p-4 lg:max-w-6xl lg:mx-auto ${className ? className : " "}`}>
+        <div className={`px-4 lg:max-w-6xl lg:mx-auto ${className ? className : " "}`}>
             {children}
         </div>
     )

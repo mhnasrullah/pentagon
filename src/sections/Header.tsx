@@ -12,7 +12,7 @@ interface StatsProps {
 const Stats = ({position,name,value} : StatsProps) => (
   <div className={`absolute ${position}`}>
     <h1 className='text-white lg:text-2xl font-bold'>{value}</h1>
-    <p className='text-halfWhite text-xs lg:text-sm font-medium'>{name}</p>
+    <p className='text-halfWhite text-sm font-medium'>{name}</p>
   </div>
 )
 
@@ -26,8 +26,8 @@ const Header = () => {
         <Box className='flex flex-col-reverse pt-32 lg:pt-40 md:items-center md:flex-row'>
             <div className="w-full pt-10 md:py-0 md:w-1/2 lg:w-5/12">
                 <h1 className='text-white text-4xl font-semibold leading-tight lg:leading-snug lg:text-5xl'>Discover Collect and Sale Rare Masterpiece NFTs</h1>
-                <p className='font-medium text-xs mt-2 leading-relaxed lg:leading-[1.8] text-halfWhite lg:mt-5 lg:text-sm'>The biggest marketplace that sells digital asset from crypto, ethereum, etc.</p>
-                <div className='flex mt-2 lg:mt-10'>
+                <p className='font-medium text-sm mt-5 leading-relaxed lg:leading-[1.8] text-white'>The biggest marketplace that sells digital asset from crypto, ethereum, etc.</p>
+                <div className='flex mt-10'>
                   <Input
                   placeholder='Find Something...'
                   />

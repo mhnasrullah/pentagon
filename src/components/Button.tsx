@@ -11,7 +11,7 @@ interface Props extends ComponentPropsWithRef<"button">{
 const Button:FC<Props> = ({children,className,styled,as,to,smallPadding,...props}) => {
 
     let Style = " ";
-    let defaultStyle = `py-2 ${smallPadding ? "px-3" : "px-8"} font-medium text-xs border-[1.5px] rounded-lg`
+    let defaultStyle = `py-2 ${smallPadding ? "px-3" : "px-8"} font-medium text-sm border-[1.5px] rounded-lg`
 
     switch (styled) {
         case "primary" : 
