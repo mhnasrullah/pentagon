@@ -1,0 +1,18 @@
+[
+    {
+        "title" : "Explore",
+        "menu" : ["Digital Arts","Photography","Trading Card","Music"]
+    },
+    {
+        "title" : "Account",
+        "menu" : ["Login","Register"]
+    },
+    {
+        "title" : "Company",
+        "menu" : ["Rangking","Activity"]
+    },
+    {
+        "title" : "Stats",
+        "menu" : ["About Us","Help","Term of Services","Privacy Agremeent"]
+    }
+]
