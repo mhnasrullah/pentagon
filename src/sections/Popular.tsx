@@ -12,7 +12,7 @@ const Popular = () => {
     <section className='pt-8 md:pt-14'>
         <Box>
             <div className="flex justify-between items-end">
-                <h1 className='text-white font-medium text-lg'>Popular</h1>
+                <h1 className='text-white font-medium text-lg lg:text-xl'>Popular</h1>
                 <Link to={"/"} className="text-secondBlue text-sm">See all items</Link>
             </div>
             <Swiper
