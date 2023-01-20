@@ -1,8 +1,9 @@
 import {useEffect, useState} from 'react'
 import Box from '../components/Box'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import {HiMenuAlt1} from 'react-icons/hi'
 import Button from '../components/Button'
+import data from '../data/nav.json'
 
 const AuthComponent = () => {
     return (
@@ -21,6 +22,8 @@ const AuthComponent = () => {
 }
 
 const Navbar = () => {
+
+    const {pathname} = useLocation()
 
     const [show,isShow] = useState(false);
     const [bgTrans,setTrans] = useState(true);
@@ -46,11 +49,10 @@ const Navbar = () => {
             </div>
 
             {/* Menu side w toogle on mobile */}
-            <div className={`${show ? "bg-black lg:bg-transparent" : "bg-transparent"} text-sm font-medium lg:ml-8 lg:space-x-8 flex flex-col lg:flex-row lg:justify-start items-center space-y-3 lg:py-0 py-6 ${show ? 'block' : 'hidden lg:block'}`}>
-                <Link to={'/'} className="text-white80">Explore</Link>
-                <Link to={'/'} className="text-white80">Help</Link>
-                <Link to={'/'} className="text-white80">Stats</Link>
-                <Link to={'/'} className="text-white80">About Us</Link>
+            <div className={`${show ? "bg-black lg:bg-transparent" : "bg-transparent"} text-sm font-medium lg:ml-8 lg:space-x-8 flex flex-col lg:flex-row lg:justify-start items-center space-y-3 lg:space-y-0 lg:py-0 py-6 ${show ? 'block' : 'hidden lg:block'}`}>
+                {data.map(({name,path})=>(
+                    <Link key={name} to={path} className={`text-white80 overflow-visible relative after:inset-0 after:translate-y-5 after:absolute after:h-[2px] ${pathname == path ? 'after:w-full' : 'after:w-0'} hover:after:w-full after:transition-all after:bg-blue inline-block`}>{name}</Link>
+                ))}
                 <div className='flex flex-col space-y-2 w-full lg:hidden'>
                     <AuthComponent/>
                 </div>

@@ -27,7 +27,7 @@ const MainExplore = () => {
                 )}
 
             {/* All Items */}
-                <div className={`w-full space-y-4 mt-6 md:grid md:grid-cols-4 lg:mt-0 ${showFilter ? 'lg:ml-4 lg:grid-cols-3' : 'lg:grid-cols-4'} md:gap-4 md:space-y-0`}>
+                <div className={`w-full space-y-4 mt-6 pb-6 md:grid md:grid-cols-4 lg:mt-0 ${showFilter ? 'lg:ml-4 lg:grid-cols-3' : 'lg:grid-cols-4'} md:gap-4 md:space-y-0`}>
                     {data.map(({id,...e})=>(
                         <NFTCard
                         key={id}

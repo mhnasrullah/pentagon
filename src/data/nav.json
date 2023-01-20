@@ -1,0 +1,18 @@
+[
+    {
+        "name" : "Explore",
+        "path" : "/explore"
+    },
+    {
+        "name" : "Help",
+        "path" : "/help"
+    },
+    {
+        "name" : "Stats",
+        "path" : "/stats"
+    },
+    {
+        "name" : "About Us",
+        "path" : "/about"
+    }
+]
