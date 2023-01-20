@@ -1,0 +1,65 @@
+[
+    {
+        "id" : 1,
+        "image" : "/assets/nft/monalisa.jpg",
+        "price" : 0.2,
+        "name" : "Monalisa Digital Art",
+        "by" : "Alexander Davinci"
+    },
+    {
+        "id" : 2,
+        "image" : "/assets/nft/purple-abstract.jpg",
+        "price" : 0.1,
+        "name" : "Purple Abstract Art",
+        "by" : "Alez Perez"
+    },
+    {
+        "id" : 3,
+        "image" : "/assets/nft/abstract-art.jpg",
+        "price" : 0.2,
+        "name" : "Abstract Art",
+        "by" : "Efe Kurnaz"
+    },
+    {
+        "id" : 812,
+        "image" : "/assets/nft/double-face-art.jpg",
+        "price" : 0.2,
+        "name" : "Double Face Art",
+        "by" : "Alexander Davinci"
+    },
+    {
+        "id" : 112,
+        "image" : "/assets/nft/apple.jpg",
+        "price" : 0.2,
+        "name" : "Apple Digital Art",
+        "by" : "Alexander Davinci"
+    },
+    {
+        "id" : 221,
+        "image" : "/assets/nft/hectic-face.jpg",
+        "price" : 0.2,
+        "name" : "Hectic Face Digital Art",
+        "by" : "Alexander Davinci"
+    },
+    {
+        "id" : 813,
+        "image" : "/assets/nft/full-color.jpg",
+        "price" : 0.2,
+        "name" : "Full Color Art",
+        "by" : "Steve Jhonson"
+    },
+    {
+        "id" : 202,
+        "image" : "/assets/nft/yellow-black.jpg",
+        "price" : 0.2,
+        "name" : "Abstract Yellow Black",
+        "by" : "Victor Grabazyck"
+    },
+    {
+        "id" : 201,
+        "image" : "/assets/nft/doodle.jpg",
+        "price" : 0.2,
+        "name" : "Cute Doodle",
+        "by" : "Alexander Davinci"
+    }
+]

@@ -6,10 +6,11 @@ interface Props extends ComponentProps<"div">{
     price : number,
     name : string,
     by : string,
+    idNFT? : number,
     _for? : "header" | "items"
 }
 
-const NFTCard:FC<Props> = ({image,price,name,by,_for = "items",className}) => {
+const NFTCard:FC<Props> = ({image,idNFT,price,name,by,_for = "items",className}) => {
 
     if(_for === "header"){
         return (
@@ -22,7 +23,7 @@ const NFTCard:FC<Props> = ({image,price,name,by,_for = "items",className}) => {
                 </div>
                 <img src={image} alt={name} className="rounded-xl w-48 lg:w-64 lg:h-72 h-56 object-cover object-center"/>
                 <div className='absolute w-full bottom-0 p-4'>
-                    <p className="font-medium text-white text-sm lg:text-base">{name}</p>
+                    <p className="font-medium text-white text-sm lg:text-base">{name} {idNFT && `#${idNFT}`}</p>
                     <p className='text-xs font-medium text-white80 lg:text-sm'>{by}</p>
                 </div>
             </div>
@@ -36,7 +37,7 @@ const NFTCard:FC<Props> = ({image,price,name,by,_for = "items",className}) => {
             {/* name n by */}
             <div className='w-2/3'>
                 <p className='text-sm'>{by}</p>
-                <p className='font-semibold text-lg mt-2'>{name}</p>
+                <p className='font-semibold text-lg mt-2 h-14'>{name}</p>
             </div>
             {/* price */}
             <div className='w-fit mt-[2px]'>
