@@ -36,11 +36,13 @@ const Navbar = () => {
     },[bgTrans])
 
   return (
-    <nav className={`${!bgTrans ? 'bg-black lg:top-0' : `${show ? 'bg-black lg:bg-transparent' : `bg-transparent`} lg:top-8`} py-4 transition-all fixed z-[10000] w-full text-white`}>
+    <nav className={`${!bgTrans ? 'bg-black lg:top-0' : `${show ? 'bg-black lg:bg-transparent' : `bg-transparent`} lg:top-8`} py-4 transition-all top-0 fixed z-[10000] w-full text-white`}>
         <Box className='lg:flex lg:items-center'>
             {/* Left Side n full on mobile */}
             <div className='flex justify-between lg:w-fit'>
-                <img src='/assets/logo.svg' alt='logo-pentagon' className='w-40 lg:w-44'/>
+                <Link to={"/"}>
+                    <img src='/assets/logo.svg' alt='logo-pentagon' className='w-40 lg:w-44'/>
+                </Link>
                 <button 
                 onClick={()=>isShow(!show)}
                 className='p-2 lg:hidden'>

@@ -18,7 +18,7 @@ const Footer = () => {
             {/* Company */}
             {/* Stats */}
             {data.map(({title,menu},i)=>(
-                <div className='text-sm font-medium flex flex-col space-y-4 w-1/2 md:w-1/5 lg:w-1/6 mt-8 lg:mt-0' key={i}>
+                <div className='text-xs font-medium flex flex-col space-y-4 w-1/2 md:w-1/5 lg:w-1/6 mt-8 lg:mt-0' key={i}>
                     <p className='text-blue'>{title}</p>
                     {menu.map((e)=>(
                         <Link to={"/"} key={e} className="text-white">{e}</Link>
@@ -27,7 +27,7 @@ const Footer = () => {
             ))}
 
             {/* Contact */}
-            <div className='text-sm font-medium flex flex-col space-y-4 w-full md:w-1/5 lg:w-1/6 mt-8 lg:mt-0'>
+            <div className='text-xs font-medium flex flex-col space-y-4 w-full md:w-1/5 lg:w-1/6 mt-8 lg:mt-0'>
                 <p className='text-blue'>Contact</p>
                 <Link to={"/"}  className="text-white">(022) 012 3456</Link>
                 <Link to={"/"}  className="text-white">hello@nfteverywhere.com</Link>
