@@ -1,7 +1,7 @@
-import { ComponentPropsWithRef, FC } from "react";
-import { Link } from 'react-router-dom'
+import { ComponentProps, FC } from "react";
+import { Link } from 'react-router-dom';
 
-interface Props extends ComponentPropsWithRef<"button">{
+interface Props extends ComponentProps<"button">{
     as : "link" | "button",
     styled : "primary" | "secondary",
     to? : string,
@@ -15,10 +15,10 @@ const Button:FC<Props> = ({children,className,styled,as,to,smallPadding,...props
 
     switch (styled) {
         case "primary" : 
-            Style = `${className ? className : " "} border-blue bg-blue text-white ${defaultStyle}`;
+            Style = `${className ? className : " "} border-blue bg-blue hover:bg-secondBlue transition-all hover:border-secondBlue text-white ${defaultStyle}`;
             break;
         case "secondary" : 
-            Style = `${className ? className : " "} border-blue bg-trans text-white ${defaultStyle}`;
+            Style = `${className ? className : " "} border-blue bg-trans text-white hover:bg-[#ffffff33] transition-all ${defaultStyle}`;
             break;
     }
 

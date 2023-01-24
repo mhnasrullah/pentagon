@@ -1,27 +1,45 @@
-import React from 'react'
+import React, { ComponentProps } from 'react'
 import Box from '../components/Box'
 import Button from '../components/Button'
 import NFTCard from '../components/Card/NFTCard'
 import Input from '../components/Input'
+import {HTMLMotionProps, motion} from 'framer-motion'
 
-interface StatsProps {
+interface StatsProps extends HTMLMotionProps<"div">{
   position : string,
   value : string,
-  name : string
+  name : string,
+  motion? : any
 }
-const Stats = ({position,name,value} : StatsProps) => (
-  <div className={`absolute ${position}`}>
+const Stats = ({position,name,value,...props} : StatsProps) => (
+  <motion.div 
+  {...props}
+  className={`absolute ${position}`}>
     <h1 className='text-white lg:text-2xl font-bold'>{value}</h1>
     <p className='text-halfWhite text-sm font-medium'>{name}</p>
-  </div>
+  </motion.div>
 )
 
 const Header = () => {
+
+  const StatsMotion = {
+    animate : {
+      scale : [0.8,1.1,0.8]
+    },
+    transition : {
+      duration : 10,
+      repeat : Infinity,
+      type : 'spring',
+      stiffness : 1000
+    }
+  }
+
   return (
     <div
     className='min-h-screen bg-cover bg-center pb-32 md:pb-52'
     style={{
-        backgroundImage : 'url(/assets/background.jpg)'
+        backgroundImage : 'url(/assets/background.jpg)',
+        backgroundAttachment : 'fixed'
     }}>
         <Box className='flex flex-col-reverse pt-32 lg:pt-40 md:items-center md:flex-row'>
             <div className="w-full pt-10 md:py-0 md:w-1/2 lg:w-5/12">
@@ -54,15 +72,18 @@ const Header = () => {
                 name='#NightWolf'
                 by='Joao Pereira'
                 price={0.4}/>
-                <Stats
+                <Stats 
+                {...StatsMotion}
                 name='Aucations'
                 position='-top-12 left-5 lg:top-24 lg:left-12'
                 value='51K+'/>
                 <Stats
+                {...StatsMotion}
                 name='Artist'
                 position='top-8 right-10 lg:top-0 lg:right-16'
                 value='99K+'/>
                 <Stats
+                {...StatsMotion}
                 name='Artworks'
                 position='bottom-0 left-4 lg:bottom-0 lg:left-52'
                 value='101K+'/>
