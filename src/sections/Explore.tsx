@@ -30,7 +30,7 @@ const Explore = () => {
             pagination
             >
                 {data.map(({image,text,link},i)=>(
-                    <SwiperSlide>
+                    <SwiperSlide key={i}>
                         <ExploreCard
                         image={image}
                         link={link}
