@@ -1,0 +1,102 @@
+[
+    {
+        "rank" : 1,
+        "evolution" : 2,
+        "name" : "Alex Perez",
+        "image" : "/assets/image/user/alex-perez.png",
+        "volume" : 300000010,
+        "inday" : 24.90,
+        "inweek" : 12.67,
+        "items" : 120
+    },
+    {
+        "rank" : 2,
+        "evolution" : 3,
+        "name" : "Jane Cooper",
+        "image" : "/assets/image/user/jane-cooper.png",
+        "volume" : 300000910,
+        "inday" : 34.90,
+        "inweek" : -1.10,
+        "items" : 44
+    },
+    {
+        "rank" : 3,
+        "evolution" : -1,
+        "name" : "Wade Warren",
+        "image" : "/assets/image/user/wade-warren.png",
+        "volume" : 29129123,
+        "inday" : -14.43,
+        "inweek" : -9.10,
+        "items" : 312
+    },
+    {
+        "rank" : 4,
+        "evolution" : -1,
+        "name" : "Cameron Williamson",
+        "image" : "/assets/image/user/cameron-williamson.png",
+        "volume" : 33129124,
+        "inday" : -1.98,
+        "inweek" : -7.11,
+        "items" : 512
+    },
+    {
+        "rank" : 5,
+        "evolution" : 0,
+        "name" : "Brooklyn Simmons",
+        "image" : "/assets/image/user/brooklyn-simmons.png",
+        "volume" : 42123121,
+        "inday" : 2.60,
+        "inweek" : -1.47,
+        "items" : 579
+    },
+    {
+        "rank" : 6,
+        "evolution" : 1,
+        "name" : "Guy Hawkins",
+        "image" : "/assets/image/user/guy-hawkins.png",
+        "volume" : 51211890,
+        "inday" : 5.10,
+        "inweek" : 0.21,
+        "items" : 157
+    },
+    {
+        "rank" : 7,
+        "evolution" : 0,
+        "name" : "Robert Fox",
+        "image" : "/assets/image/user/robert-fox.png",
+        "volume" : 19123781,
+        "inday" : 3.99,
+        "inweek" : -0.01,
+        "items" : 461
+    },
+    {
+        "rank" : 8,
+        "evolution" : -1,
+        "name" : "Barone LLC.",
+        "image" : "/assets/image/user/barone-llc.png",
+        "volume" : 11194990,
+        "inday" : -0.51,
+        "inweek" : -8.74,
+        "items" : 941
+    },
+    {
+        "rank" : 9,
+        "evolution" : 2,
+        "name" : "Ralph Edwards",
+        "image" : "/assets/image/user/ralph-edwards.png",
+        "volume" : 8904127,
+        "inday" : 24.91,
+        "inweek" : 7.97,
+        "items" : 489
+    },
+    {
+        "rank" : 10,
+        "evolution" : 1,
+        "name" : "Jerome Bell",
+        "image" : "/assets/image/user/jerome-bell.png",
+        "volume" : 46975424,
+        "inday" : 21.78,
+        "inweek" : 11.21,
+        "items" : 32
+    }
+]

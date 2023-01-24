@@ -9,6 +9,7 @@ import Help from './pages/Help'
 // Import all pages needed
 import Main from './pages/Main'
 import SignIn from './pages/SignIn'
+import Stats from './pages/Stats'
 
 
 const router = createBrowserRouter([
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
   {
     path : "/help",
     element : <Help/>
+  },
+  {
+    path : "/stats",
+    element : <Stats/>
   },
   {
     path : "*",
