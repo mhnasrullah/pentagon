@@ -41,6 +41,13 @@ const Footer = () => {
             </div>
 
         </Box>
+        <Box className='mt-10'>
+            <p className='text-xs text-white text-center leading-relaxed'>
+                Made with ♥️<br/>
+                Designed by <a className='text-blue font-semibold' href="https://www.instagram.com/nuhptr/" target={"_blank"} rel={"noopener noreferrer"}>@nuhptr</a><br/>
+                Developed by <a className='text-blue font-semibold' href="https://www.instagram.com/m_hnasrullah/" target={"_blank"} rel={"noopener noreferrer"}>@mhnasrullah</a><br/>
+            </p>
+        </Box>
     </footer>
   )
 }
